@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Soul Lavanderia · lavanderia no Tatuapé, São Paulo</title>
+<meta name="description" content="Lavanderia no Tatuapé com leva e traz. Lavar e passar, higienização de sofá, poltrona e colchão, lavagem de tênis e autoatendimento. Nota 5,0 no Google.">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,800&f[]=switzer@400&display=swap" rel="stylesheet">
+<style>
+/* ===== Tokens: cores medidas nas peças da Soul (logo do perfil e artes do Google) ===== */
+:root{
+  --noite:#0b072b; --noite2:#120b3d; --marca:#2100c4; --roxo:#4b0156; --ambar:#f29a2e;
+  --creme:#f7f3ec; --nevoa:#bdb8dc; --linha:rgba(247,243,236,.14);
+  --disp:"Cabinet Grotesk",system-ui,sans-serif; --sans:"Switzer",system-ui,sans-serif;
+  --r1:16px; --r2:999px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--noite);color:var(--creme);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.env{max-width:1200px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+.pular{position:absolute;left:-999px}.pular:focus{left:16px;top:16px;z-index:99;background:var(--ambar);color:var(--noite);padding:8px 14px;border-radius:var(--r2)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ambar);outline-offset:3px;border-radius:8px}
+.rot{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ambar)}
+h2{font-family:var(--disp);font-weight:800;font-size:clamp(34px,4.6vw,64px);line-height:1;letter-spacing:-.03em;margin-top:14px;max-width:16ch}
+.lead{margin-top:18px;color:var(--nevoa);max-width:48ch;font-size:18px}
+section{position:relative}
+.bloco{padding:clamp(72px,12vh,136px) 0}
+
+/* ===== Botões ===== */
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ambar);color:#1d0f02;font-family:var(--disp);font-weight:500;font-size:17px;padding:15px 26px;border-radius:var(--r2);transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:#ffad48}
+.btn svg{width:18px;height:18px}
+.btn-linha{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--linha);padding:13px 22px;border-radius:var(--r2);font-family:var(--disp);font-weight:500;transition:border-color .2s}
+.btn-linha:hover{border-color:var(--creme)}
+
+/* ===== Logo (redesenhado em vetor a partir do perfil) ===== */
+.logo{display:block;width:54px;height:54px}
+.logo text{font-family:var(--disp)}
+
+/* ===== Topo ===== */
+.topo{position:absolute;inset:0 0 auto;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(18px,4vw,48px)}
+.topo nav{display:flex;gap:28px;align-items:center;font-size:15px}
+.topo nav a{opacity:.86}.topo nav a:hover{opacity:1}
+.topo nav .zap{opacity:1;border:1.5px solid var(--creme);padding:9px 18px;border-radius:var(--r2);font-family:var(--disp);font-weight:500}
+@media(max-width:760px){.topo nav a:not(.zap){display:none}}
+
+/* ===== Herói: nome gigante sobre a foto ===== */
+.heroi{min-height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}
+.heroi .fundo{position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1699797467199-6bdf301649e8?w=2600&q=80&auto=format&fit=crop") center 40%/cover}
+.heroi::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(11,7,43,.97) 6%,rgba(11,7,43,.55) 46%,rgba(33,0,196,.28) 100%)}
+.heroi .dentro{position:relative;z-index:2;padding:0 clamp(18px,4vw,48px)}
+.linha{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.linha .txt{max-width:440px}
+.linha .kick{display:block;margin-bottom:12px}
+.linha .frase{font-family:var(--disp);font-weight:500;font-size:clamp(22px,2.2vw,28px);line-height:1.2;letter-spacing:-.01em}
+.linha .apoio{margin-top:8px;color:var(--nevoa)}
+.nome{font-family:var(--disp);font-weight:800;font-size:clamp(132px,31vw,460px);line-height:.78;letter-spacing:-.055em;margin:26px 0 -.05em -.05em;color:var(--creme)}
+.nome i{font-style:normal;color:var(--ambar)}
+.selo{position:absolute;z-index:3;top:clamp(96px,18vh,170px);right:clamp(18px,4vw,48px);text-align:right;
+  background:rgba(11,7,43,.74);backdrop-filter:blur(8px);padding:14px 18px;border-radius:var(--r1)}
+.selo b{display:block;font-family:var(--disp);font-weight:800;font-size:44px;line-height:1;letter-spacing:-.02em}
+.selo span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--nevoa)}
+.selo .est{color:var(--ambar);letter-spacing:3px;font-size:13px;display:block;margin:6px 0 2px}
+
+/* ===== Faixa cinética de serviços ===== */
+.faixa{background:var(--marca);overflow:hidden;padding:18px 0;border-block:1px solid rgba(255,255,255,.12)}
+.faixa .trilho{display:flex;width:max-content;animation:corre 38s linear infinite}
+.faixa span{font-family:var(--disp);font-weight:500;font-size:clamp(20px,2.2vw,28px);letter-spacing:-.01em;padding:0 22px;white-space:nowrap}
+.faixa span::after{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--ambar);margin-left:44px;vertical-align:middle}
+@keyframes corre{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.faixa .trilho{animation:none}}
+
+/* ===== Serviços ===== */
+.cards{margin-top:52px;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,26px)}
+.card{display:flex;flex-direction:column}
+.card .im{aspect-ratio:4/5;border-radius:var(--r1);overflow:hidden;background:var(--noite2)}
+.card .im img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.card:hover .im img{transform:scale(1.04)}
+.card .n{margin-top:20px;font-size:12px;letter-spacing:.16em;color:var(--ambar)}
+.card h3{font-family:var(--disp);font-weight:500;font-size:24px;line-height:1.1;margin-top:6px;letter-spacing:-.01em}
+.card p{margin-top:10px;color:var(--nevoa);font-size:16px}
+.card .preco{margin-top:12px;font-family:var(--disp);font-weight:500;font-size:15px;color:var(--creme);border-top:1px solid var(--linha);padding-top:12px}
+.card .preco b{color:var(--ambar);font-weight:800;font-size:20px}
+@media(max-width:980px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.card .im{aspect-ratio:4/3}}
+
+/* ===== Leva e traz ===== */
+.leva{background:var(--noite2)}
+.passos{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,40px);counter-reset:p}
+.passo{border-top:1.5px solid var(--linha);padding-top:24px}
+.passo .num{font-family:var(--disp);font-weight:800;font-size:64px;line-height:1;color:var(--marca);-webkit-text-stroke:1.5px #6f63ff;color:transparent}
+.passo h3{font-family:var(--disp);font-weight:500;font-size:24px;margin-top:16px}
+.passo p{margin-top:8px;color:var(--nevoa);max-width:30ch}
+@media(max-width:760px){.passos{grid-template-columns:1fr}}
+
+/* ===== Autoatendimento ===== */
+.auto{display:grid;grid-template-columns:1fr 1fr;min-height:560px}
+.auto .foto{background:url("https://images.unsplash.com/photo-1657064575960-efefbe831c2e?w=2400&q=80&auto=format&fit=crop") center/cover}
+.auto .texto{background:var(--creme);color:var(--noite);padding:clamp(48px,8vw,104px) clamp(24px,5vw,80px);display:flex;flex-direction:column;justify-content:center}
+.auto .rot{color:var(--marca)}
+.auto h2{color:var(--noite)}
+.auto .lead{color:#3d3a55}
+.cestos{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px}
+.cestos span{border:1.5px solid #cfc9e8;border-radius:var(--r2);padding:8px 16px;font-family:var(--disp);font-weight:500;font-size:15px;color:var(--noite)}
+.auto .preco{margin-top:28px;font-family:var(--disp);font-weight:500;font-size:16px;color:#3d3a55}
+.auto .preco b{font-weight:800;font-size:44px;letter-spacing:-.02em;color:var(--marca);display:block;line-height:1;margin-top:4px}
+.auto .btn{margin-top:30px;align-self:flex-start}
+@media(max-width:860px){.auto{grid-template-columns:1fr}.auto .foto{min-height:280px}}
+
+/* ===== Avaliações ===== */
+.vozes{background:var(--roxo)}
+blockquote.grande{font-family:var(--disp);font-weight:500;font-size:clamp(32px,4.6vw,64px);line-height:1.04;letter-spacing:-.025em;margin-top:22px;max-width:22ch}
+.quem{margin-top:20px;color:#e5c9ec;font-size:15px}
+.duas{margin-top:64px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,48px);border-top:1px solid rgba(255,255,255,.18);padding-top:36px}
+.duas blockquote{font-size:18px;line-height:1.45;max-width:42ch}
+.duas .quem{font-size:14px;margin-top:12px}
+.vozes .nota{margin-top:44px;font-size:13px;color:#e5c9ec}
+@media(max-width:760px){.duas{grid-template-columns:1fr}}
+
+/* ===== Onde estamos ===== */
+.onde .grade{margin-top:48px;display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(24px,4vw,56px);align-items:stretch}
+.onde address{font-style:normal;font-family:var(--disp);font-weight:500;font-size:clamp(22px,2.4vw,30px);line-height:1.2}
+.horas{margin-top:30px;width:100%;max-width:380px;border-collapse:collapse;font-size:16px}
+.horas td{padding:9px 0;border-bottom:1px solid var(--linha)}
+.horas td:last-child{text-align:right;color:var(--nevoa)}
+.horas tr.fecha td:last-child{color:#8f89b3}
+.onde .acoes{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+.mapa{border-radius:var(--r1);overflow:hidden;min-height:380px;background:var(--noite2)}
+.mapa iframe{width:100%;height:100%;min-height:380px;border:0;filter:grayscale(.35) contrast(1.05)}
+@media(max-width:860px){.onde .grade{grid-template-columns:1fr}}
+
+/* ===== Fecho e rodapé ===== */
+.fecho{text-align:center;background:var(--marca)}
+.fecho h2{margin:14px auto 0;max-width:18ch}
+.fecho .rot{color:#ffd29b}
+.fecho .btn{margin-top:34px}
+footer{padding:48px 0 96px;border-top:1px solid var(--linha)}
+footer .env{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+footer .marca{display:flex;align-items:center;gap:14px;font-family:var(--disp);font-weight:500}
+footer .marca .logo{width:56px;height:56px}
+footer .contato{display:flex;gap:22px;flex-wrap:wrap;color:var(--nevoa);font-size:15px}
+footer .contato a:hover{color:var(--creme)}
+.previa{margin-top:28px;font-size:12.5px;color:#8f89b3}
+
+/* ===== WhatsApp flutuante ===== */
+.flutua{position:fixed;right:18px;bottom:18px;z-index:30;display:inline-flex;align-items:center;gap:9px;background:#25d366;color:#05301a;
+  font-family:var(--disp);font-weight:500;padding:13px 18px;border-radius:var(--r2);box-shadow:0 12px 30px -12px rgba(0,0,0,.6)}
+.flutua svg{width:20px;height:20px}
+.js .flutua{opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .3s,transform .3s}
+.js .flutua.ve{opacity:1;transform:none;pointer-events:auto}
+
+/* ===== Entrada ao rolar: cortina que sobe, não o fade genérico ===== */
+.js .sobe{clip-path:inset(0 0 100% 0);transform:translateY(24px);transition:clip-path .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .sobe.ok{clip-path:inset(0 0 0 0);transform:none}
+@media(prefers-reduced-motion:reduce){.js .sobe{clip-path:none;transform:none;transition:none}}
+
+/* ===== Acessibilidade e acabamento (checador) ===== */
+h2{text-wrap:balance}
+::selection{background:var(--ambar);color:#1d0f02}
+.previa{max-width:72ch}
+.auto a:focus-visible{outline-color:var(--marca)}
+@media (prefers-reduced-transparency:reduce),(prefers-contrast:more){
+  .selo{background:var(--noite);backdrop-filter:none;border:1.5px solid var(--creme)}
+}
+</style>
+</head>
+<body>
+<a class="pular" href="#servicos">Ir para o conteúdo</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo-soul" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="50" fill="#2100c4"/>
+    <text x="50" y="52" text-anchor="middle" font-weight="800" font-size="27" fill="#fff" letter-spacing="-.5">S<tspan fill="none" stroke="#fff" stroke-width="3.6">O</tspan>UL</text>
+    <circle cx="47.6" cy="42" r="2.1" fill="#fff" opacity=".9"/>
+    <circle cx="51.8" cy="46.4" r="1.2" fill="#fff" opacity=".7"/>
+    <text x="50" y="66" text-anchor="middle" font-weight="500" font-size="9.4" fill="#c9c4ff" letter-spacing=".6">LAVANDERIA</text>
+  </symbol>
+</svg>
+
+<header class="topo">
+  <a href="#" aria-label="Soul Lavanderia, início"><svg class="logo"><use href="#logo-soul"/></svg></a>
+  <nav>
+    <a href="#servicos">Serviços</a><a href="#leva">Leva e traz</a><a href="#onde">Onde estamos</a>
+    <a class="zap" href="https://wa.me/5511983568036?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Soul%20e%20quero%20pedir%20uma%20retirada.">WhatsApp</a>
+  </nav>
+</header>
+
+<main>
+<section class="heroi" aria-label="Apresentação">
+  <div class="fundo" role="img" aria-label="Roupas dobradas sob luz quente"></div>
+  <div class="selo"><b>5,0</b><span class="est" aria-hidden="true">★★★★★</span><span>20 avaliações no Google</span></div>
+  <div class="dentro">
+    <div class="linha">
+      <div class="txt">
+        <span class="rot kick">Lavanderia no Tatuapé</span>
+        <p class="frase">Peça limpa, bem passada e no prazo.</p>
+        <p class="apoio">Sofá, colchão e tênis também, com leva e traz.</p>
+      </div>
+      <a class="btn" href="https://wa.me/5511983568036?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Soul%20e%20quero%20pedir%20uma%20retirada.">Pedir retirada
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#1d0f02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <h1 class="nome">Soul<i>.</i></h1>
+  </div>
+</section>
+
+<div class="faixa" aria-hidden="true"><div class="trilho">
+  <span>Lavar e passar</span><span>Sofá e poltrona</span><span>Colchão</span><span>Tênis</span><span>Leva e traz</span><span>Autoatendimento</span>
+  <span>Lavar e passar</span><span>Sofá e poltrona</span><span>Colchão</span><span>Tênis</span><span>Leva e traz</span><span>Autoatendimento</span>
+</div></div>
+
+<section class="bloco" id="servicos">
+  <div class="env">
+    
+    <h2 class="sobe">Do dia a dia ao sofá da sala.</h2>
+    <div class="cards">
+      <article class="card sobe">
+        <div class="im"><img loading="lazy" src="https://images.unsplash.com/photo-1586284359445-2e1d8db7f4cd?w=1000&q=75&auto=format&fit=crop" alt="Roupas dentro da máquina de lavar"></div><h3>Lavar e passar</h3>
+        <p>As peças do dia a dia lavadas, passadas e entregues prontas para guardar.</p>
+      </article>
+      <article class="card sobe">
+        <div class="im"><img loading="lazy" src="https://images.unsplash.com/photo-1649185885618-4bda573fc4b4?w=1000&q=75&auto=format&fit=crop" alt="Braço de sofá de tecido"></div><h3>Sofá, poltrona e colchão</h3>
+        <p>Higienização de estofados, para tirar a sujeira que a limpeza de casa não alcança.</p>
+      </article>
+      <article class="card sobe">
+        <div class="im"><img loading="lazy" src="https://images.unsplash.com/photo-1636262899511-dc5865c774dc?w=1000&q=75&auto=format&fit=crop" alt="Par de tênis brancos ao lado de uma escova"></div><h3>Tênis</h3>
+        <p>Lavagem de tênis com entrega no seu endereço.</p>
+        <div class="preco">a partir de <b>R$ 40,00</b></div>
+      </article>
+      <article class="card sobe">
+        <div class="im"><img loading="lazy" src="https://images.unsplash.com/photo-1696546761269-a8f9d2b80512?w=1000&q=75&auto=format&fit=crop" alt="Lavanderia com máquinas e carrinho de roupas"></div><h3>Autoatendimento</h3>
+        <p>Lave e seque você mesmo nas máquinas da loja.</p>
+        <div class="preco">a partir de <b>R$ 34,99</b></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="bloco leva" id="leva">
+  <div class="env">
+    
+    <h2 class="sobe">Você não precisa sair de casa.</h2>
+    <p class="lead sobe">Uma cliente resumiu assim: retirada e entrega dentro do prazo.</p>
+    <div class="passos">
+      <div class="passo sobe"><div class="num">1</div><h3>Chame no WhatsApp</h3><p>Conte o que precisa lavar e combinamos a retirada.</p></div>
+      <div class="passo sobe"><div class="num">2</div><h3>Buscamos na sua porta</h3><p>Retiramos as peças no seu endereço.</p></div>
+      <div class="passo sobe"><div class="num">3</div><h3>Devolvemos no prazo</h3><p>A peça volta limpa, passada e pronta para usar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="auto" aria-labelledby="auto-t">
+  <div class="foto" role="img" aria-label="Máquinas de lavar de autoatendimento"></div>
+  <div class="texto">
+    <div class="rot">Autoatendimento</div>
+    <h2 id="auto-t">Prefere fazer você mesmo?</h2>
+    <p class="lead">Na loja tem máquinas de lavar e secar para você usar na hora. Escolha o cesto e pronto.</p>
+    <div class="cestos"><span>Cesto básico</span><span>Cesto simples</span><span>Cesto especial</span></div>
+    <div class="preco">a partir de<b>R$ 34,99</b></div>
+    <a class="btn" href="#onde">Ver como chegar
+      <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#1d0f02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+</section>
+
+<section class="bloco vozes" aria-labelledby="vozes-t">
+  <div class="env">
+    <div class="rot" id="vozes-t" style="color:#ffc27a">O que dizem no Google</div>
+    <blockquote class="grande sobe">“…a peça entregue limpa e muito bem passada dentro do prazo.”</blockquote>
+    <div class="quem">Fabiana V. · avaliação no Google</div>
+    <div class="duas">
+      <div class="sobe"><blockquote>“Trabalho impecável, tive o prazer de contrata-los para a limpeza do sofá e poltrona, o trabalho ficou perfeito…”</blockquote><div class="quem">Bianca S.</div></div>
+      <div class="sobe"><blockquote>“Retirada e entrega dentro do prazo. Respondiam prontamente para sanar dúvidas e a cereja do bolo foi o atendimento: gentileza e muita educação.”</blockquote><div class="quem">Andreia A.</div></div>
+    </div>
+    <p class="nota">Nota 5,0 com 20 avaliações no Google.</p>
+  </div>
+</section>
+
+<section class="bloco onde" id="onde">
+  <div class="env">
+    
+    <h2 class="sobe">Passe na loja ou fale conosco.</h2>
+    <div class="grade">
+      <div>
+        <address>Rua Serra de Bragança, 1627<br>Tatuapé, São Paulo</address>
+        <table class="horas" aria-label="Horário de funcionamento">
+          <tr><td>Segunda</td><td>8h às 17h</td></tr>
+          <tr><td>Terça</td><td>7h30 às 17h</td></tr>
+          <tr><td>Quarta a sexta</td><td>8h às 17h</td></tr>
+          <tr><td>Sábado</td><td>9h às 13h</td></tr>
+          <tr class="fecha"><td>Domingo</td><td>Fechado</td></tr>
+        </table>
+        <div class="acoes">
+          <a class="btn" href="https://wa.me/5511983568036?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Soul%20e%20quero%20pedir%20uma%20retirada.">Chamar no WhatsApp</a>
+          <a class="btn-linha" href="https://www.google.com/maps/search/?api=1&query=Soul%20Lavanderia%20Rua%20Serra%20de%20Bragan%C3%A7a%201627%20Tatuap%C3%A9" target="_blank" rel="noopener">Como chegar</a>
+        </div>
+      </div>
+      <div class="mapa"><iframe loading="lazy" title="Mapa da Soul Lavanderia" src="https://www.google.com/maps?q=Rua%20Serra%20de%20Bragan%C3%A7a%2C%201627%20-%20Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo&hl=pt-BR&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloco fecho">
+  <div class="env">
+    
+    <h2>Roupa limpa sem você sair de casa.</h2>
+    <a class="btn" href="https://wa.me/5511983568036?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Soul%20e%20quero%20pedir%20uma%20retirada.">Pedir retirada pelo WhatsApp
+      <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#1d0f02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="env">
+    <div class="marca"><svg class="logo"><use href="#logo-soul"/></svg>Soul Lavanderia</div>
+    <div class="contato">
+      <a href="https://wa.me/5511983568036">(11) 98356-8036</a>
+      <a href="https://www.instagram.com/soullavanderia/" target="_blank" rel="noopener">@soullavanderia</a>
+      <span>Rua Serra de Bragança, 1627, Tatuapé</span>
+    </div>
+  </div>
+  <div class="env"><p class="previa">Prévia preparada pela Avalizar. Fotos ilustrativas, preços das artes de vocês e avaliações do Google: publicamos só depois da conferência e da autorização de vocês.</p></div>
+</footer>
+
+<a class="flutua" href="https://wa.me/5511983568036?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Soul%20e%20quero%20pedir%20uma%20retirada." aria-label="Falar com a Soul no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 00-7.8 13.5L3 21l4.7-1.2A9 9 0 1012 3z" stroke="#05301a" stroke-width="2" stroke-linejoin="round"/></svg>WhatsApp</a>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var fl=document.querySelector('.flutua');
+  var mostra=function(){fl.classList.toggle('ve',window.scrollY>window.innerHeight*.75)};
+  window.addEventListener('scroll',mostra,{passive:true});mostra();
+  var els=document.querySelectorAll('.sobe');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('ok')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('ok');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
